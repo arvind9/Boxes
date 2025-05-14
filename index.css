@@ -1,1 +1,57 @@
 /* Write your code here. */
+.bg-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  margin: 10px;
+  font-family: Bree Serif;
+}
+.box-small {
+  height: 100px;
+  width: 100px;
+  background-color: #fbbf24;
+  align-self: flex-end;
+}
+.box-medium {
+  height: 200px;
+  width: 200px;
+  background-color: #38bdf8;
+  align-self: flex-end;
+}
+.box-large {
+  height: 300px;
+  width: 300px;
+  background-color: #ec4899;
+}
+.box-container {
+  display: flex;
+  flex-direction: row;
+}
+h1{
+  font-family: Roboto;
+  font-size: 36px;
+}
+
+@media (max-width: 767px){
+  .box-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.box-small{
+  align-self: center;
+}
+.box-medium{
+  align-self: center;
+}
+}
